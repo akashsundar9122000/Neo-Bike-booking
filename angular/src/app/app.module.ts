@@ -11,7 +11,11 @@ import { UserSideComponent } from './user-side/user-side.component';
 import { UserProfileComponent } from './user-side/user-profile/user-profile.component';
 import { UserProfileEditComponent } from './user-side/user-profile-edit/user-profile-edit.component';
 import { SignupComponent } from './auth/signup/signup.component';
-
+import { AdminSideComponent } from './admin-side/admin-side.component';
+import { AdminNavbarComponent } from './admin-side/admin-navbar/admin-navbar.component';
+import { AdminDashboardComponent } from './admin-side/admin-dashboard/admin-dashboard.component';
+import { AdminProfileComponent } from './admin-side/admin-profile/admin-profile.component';
+import { ModlesComponent } from './modles/modles.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,12 @@ import { SignupComponent } from './auth/signup/signup.component';
     UserSideComponent,
     UserProfileComponent,
     UserProfileEditComponent,
-    SignupComponent
+    SignupComponent,
+    AdminSideComponent,
+    AdminNavbarComponent,
+    AdminDashboardComponent,
+    AdminProfileComponent,
+    ModlesComponent
   ],
   imports: [
     BrowserModule,
