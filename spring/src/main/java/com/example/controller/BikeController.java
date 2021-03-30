@@ -8,11 +8,12 @@ import com.example.model.BikeModel;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
-
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
 
 @RestController
 public class BikeController {
@@ -23,9 +24,14 @@ public class BikeController {
     @Autowired
     BookingsService bookingsService;
 
-    @PostMapping("/user/bikes")
+    @PostMapping(value={"/user/bikes","/admin/dashboard"})
     public List<BikeModel> getBikes(@RequestParam String adminID) {
         return bikeService.getBikes(adminID);
+    }
+
+    @GetMapping("/user/dashboard")
+    public List<BikeModel> getAllBikes(){
+        return bikeService.getAllBikes();
     }
 
     @PostMapping("/admin/addBike")

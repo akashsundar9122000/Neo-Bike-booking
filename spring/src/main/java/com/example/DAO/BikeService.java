@@ -21,6 +21,10 @@ public class BikeService {
 		return bikeRepo.findByAdminID(adminID);
 	}
 
+    public List<BikeModel> getAllBikes(){
+        return bikeRepo.findAll();
+    }
+
     public void addBike(BikeModel bike){
         bikeRepo.save(bike);
     }
