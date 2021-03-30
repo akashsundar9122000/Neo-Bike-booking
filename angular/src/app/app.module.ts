@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {HttpClientModule} from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,7 +10,7 @@ import { UserNavbarComponent } from './user-side/user-navbar/user-navbar.compone
 import { UserSideComponent } from './user-side/user-side.component';
 import { UserProfileComponent } from './user-side/user-profile/user-profile.component';
 import { UserProfileEditComponent } from './user-side/user-profile-edit/user-profile-edit.component';
-
+import { SignupComponent } from './auth/signup/signup.component';
 
 
 @NgModule({
@@ -21,14 +22,12 @@ import { UserProfileEditComponent } from './user-side/user-profile-edit/user-pro
     UserSideComponent,
     UserProfileComponent,
     UserProfileEditComponent,
-    
-    
-    
+    SignupComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
