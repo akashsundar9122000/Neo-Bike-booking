@@ -37,4 +37,20 @@ public class UserService {
     public void editUser(UserModel user){
         userRepo.save(user);
     }
+
+    public void saveUser(UserModel user){
+        userRepo.save(user);
+    }
+
+    public boolean isUserPresent(String email, String password){
+        Optional<UserModel> u=userRepo.findById(email);
+        if(!u.isEmpty()){
+            UserModel user=u.get();
+            if(user.getPassword().equals(password))
+                return true;
+            else
+                return false;
+        }
+        return false;
+    }
 }
