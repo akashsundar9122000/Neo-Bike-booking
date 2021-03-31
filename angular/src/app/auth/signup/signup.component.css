@@ -1,0 +1,4 @@
+input[type=button],input[type=submit]{
+    background-color:orange;
+   -webkit-border-radius:5px 5px 5px 5px;
+}

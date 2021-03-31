@@ -12,10 +12,13 @@ import { UserProfileComponent } from './user-side/user-profile/user-profile.comp
 import { UserProfileEditComponent } from './user-side/user-profile-edit/user-profile-edit.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { AdminSideComponent } from './admin-side/admin-side.component';
-import { AdminNavbarComponent } from './admin-side/admin-navbar/admin-navbar.component';
+//import { AdminNavbarComponent } from './admin-side/admin-navbar/admin-navbar.component';
 import { AdminDashboardComponent } from './admin-side/admin-dashboard/admin-dashboard.component';
 import { AdminProfileComponent } from './admin-side/admin-profile/admin-profile.component';
 import { ModlesComponent } from './modles/modles.component';
+import { CompanyDetailsComponent } from './user-side/company-details/company-details.component';
+import { BikeDetailsComponent } from './user-side/bike-details/bike-details.component';
+import { UserBookingsComponent } from './user-side/user-bookings/user-bookings.component';
 
 @NgModule({
   declarations: [
@@ -28,10 +31,13 @@ import { ModlesComponent } from './modles/modles.component';
     UserProfileEditComponent,
     SignupComponent,
     AdminSideComponent,
-    AdminNavbarComponent,
+    //AdminNavbarComponent,
     AdminDashboardComponent,
     AdminProfileComponent,
-    ModlesComponent
+    ModlesComponent,
+    CompanyDetailsComponent,
+    BikeDetailsComponent,
+    UserBookingsComponent
   ],
   imports: [
     BrowserModule,

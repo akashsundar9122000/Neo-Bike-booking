@@ -14,10 +14,10 @@ const routes: Routes = [
   {path: 'userDashboard', component: UserDashboardComponent },
   {path: 'userLogin', component: LoginComponent },
   {path: 'userNavbar',component:UserNavbarComponent},
-  {path: 'userSignup', component:UserSignupComponent},
+  {path: 'Signup', component:SignupComponent},
   {path: 'userProfileEdit', component:UserProfileEditComponent},
   { path: 'adminDashboard', component: AdminDashboardComponent }, 
-  { path: 'adminSignup', component: AdminSignupComponent },
+ // { path: 'adminSignup', component: AdminSignupComponent },
   { path: 'adminLogin', component: LoginComponent },
   {path : 'adminProfile', component: AdminProfileComponent}
 

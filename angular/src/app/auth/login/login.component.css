@@ -1,6 +1,17 @@
 
 .login{
-    color:blue;
-    text-align:center;
-
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%
+    
+    
+}
+input[type=button],input[type=submit]{
+    background-color:orange;
+   -webkit-border-radius:5px 5px 5px 5px;
+}
+#loginbox{
+    -webkit-border-radius:30px 30px 30px 30px;
+    border-radius:10px 10px 10px 10px;
 }
