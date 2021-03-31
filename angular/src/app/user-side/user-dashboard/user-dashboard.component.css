@@ -1,0 +1,26 @@
+.table_dashboard{
+    margin-left:auto;
+    margin-right:auto;
+}
+#company {
+    font-family:'Trebuchet MS', Arial, Helvetica, sans-serif, monospace;
+    border-collapse:collapse;
+    width:100%;
+}
+#company td, #company th {
+    border: 1px solid #ddd;
+    padding:8px;
+}
+#company tr:nth-child(even){
+    background-color:#f2f2f2;
+}
+#company tr:hover{
+    background-color:#ddd;
+}
+#company th{
+    padding-top:30px;
+    padding-bottom:30px;
+    text-align:left;
+    background-color:orange;
+    color:white;
+}

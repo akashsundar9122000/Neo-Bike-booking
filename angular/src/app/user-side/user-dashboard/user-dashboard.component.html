@@ -1,0 +1,22 @@
+
+<legend style="text-align:center;"><h1><b>DASHBOARD</b></h1></legend>
+
+    <div class="container" id="userDashboard">
+        <table class="table_dashboard" style="text-align:center;">
+          <thead>
+              <tr>
+                <th>COMPANY NAME</th><br><br>
+                <th>ADDRESS</th><br><br>
+                <th>MOBILE NUMBER</th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let character of characters">
+              <td>{{ character.name}}</td><br><br>
+              <td>{{ character.address }}</td><br><br>
+              <td>{{ character.mobile}}</td><br><br>
+              
+            </tr><br><br><br>
+          </tbody><br>
+        </table><br>
+      </div>  

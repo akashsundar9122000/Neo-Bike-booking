@@ -1,0 +1,24 @@
+
+<legend style="text-align:center;"><h1><b>USER BOOKINGS</b></h1></legend>
+<div>
+        <table class="table-striped" style="text-align:center;">
+          <thead>
+              <tr>
+                <th>COMPANY NAME</th><br><br>
+                <th>BIKE MODEL</th><br><br>
+                <th>RENT</th><br><br>
+                <th>DAYS</th><br>
+                <th>TOTAL PRICE</th><br>
+              </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let booking of bookings">
+              <td>{{ booking.company_name}}</td><br><br>
+              <td>{{ booking.bike_model }}</td><br><br>
+              <td>{{ booking.rent }}</td><br><br>
+              <td>{{ booking.days }}</td><br>
+              <td>{{ booking.total_price }}</td><br>
+            </tr><br><br><br>
+          </tbody><br>
+        </table><br>
+      </div>  
