@@ -15,6 +15,17 @@ public class UserModel {
     int age;
     String userRole;
 
+    public UserModel(String username, String password, String email, String mobileNumber, int age, String userRole) {
+        this.username = username;
+        this.password = password;
+        this.email = email;
+        this.mobileNumber = mobileNumber;
+        this.age = age;
+        this.userRole = userRole;
+    }
+    public UserModel() {
+    }
+
     public String getUsername() {
         return username;
     }
