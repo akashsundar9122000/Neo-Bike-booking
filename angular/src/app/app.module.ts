@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -41,3 +42,4 @@ import { BikeDetailsComponent } from './user-side/bike-details/bike-details.comp
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
