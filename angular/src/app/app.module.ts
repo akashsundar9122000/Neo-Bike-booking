@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {HttpClientModule} from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +12,7 @@ import { AdminProfileComponent } from './admin-side/admin-profile/admin-profile.
 import { LoginComponent } from './auth/login/login.component';
 import { ModlesComponent } from './modles/modles.component';
 import { AdminSignupComponent } from './auth/adminSignup/adminSignup.component';
+import { AddBikesComponent } from './admin-side/add-bikes/add-bikes.component';
 
 
 @NgModule({
@@ -27,11 +29,13 @@ import { AdminSignupComponent } from './auth/adminSignup/adminSignup.component';
     LoginComponent,
     ModlesComponent,
     AdminSignupComponent,
+    AddBikesComponent,
     
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
     
   ],
   providers: [],
