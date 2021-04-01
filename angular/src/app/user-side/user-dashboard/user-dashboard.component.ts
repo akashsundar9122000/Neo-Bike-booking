@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { CompanyList } from 'src/app/modles/companylist';
+import { CompanyList } from 'src/app/models/companylist';
 
 @Component({
   selector: 'app-user-dashboard',

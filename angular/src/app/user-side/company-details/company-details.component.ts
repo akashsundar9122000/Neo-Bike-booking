@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import CompanyElements  from 'src/app/modles/companyelements'
+import   CompanyElements   from 'src/app/models/companyelements'
 @Component({
   selector: 'app-company-details',
   templateUrl: './company-details.component.html',

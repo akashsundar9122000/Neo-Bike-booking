@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { UserBookingElements } from 'src/app/modles/userbookingelements'
+import { UserBookingElements } from 'src/app/models/userbookingelements'
 @Component({
   selector: 'app-user-bookings',
   templateUrl: './user-bookings.component.html',

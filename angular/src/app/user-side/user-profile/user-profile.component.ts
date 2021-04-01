@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { UserProfileModel } from "src/app/modles/userProfileModel";
+import { UserProfileModel } from "src/app/models/userProfileModel";
 @Component({
   selector: 'app-user-profile',
   templateUrl: './user-profile.component.html',

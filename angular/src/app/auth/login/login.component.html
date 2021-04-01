@@ -1,6 +1,3 @@
-
-
-
 <html>
 <head>
    BikeBooking
@@ -8,23 +5,26 @@
 <body> 
     <h1 class="login">LOG IN</h1>
     <form>
-        <div class="tabs" id="userTab" style="text-align:center;" >
+        <div class="tabs" id="userTab" routerLink ="/login" style="text-align:center;" >
             <button class="tablinks" onClick="openLogin(event,'User')">User</button>
-        </div>
+        </div><br>
+        <div class="tabs" id="userTab" routerLink ="/login" style="text-align:center;" >
+            <button class="tablinks" onClick="openLogin(event,'Admin')">Admin</button>
+        </div><br>
         <div style="text-align:center;">
-            <label for="password">Enter User Name</label><br />
-            <input style="text-align:center;" type="text" id="email" ng-model="student.username" /> <br /><br/>
+            <!-- <label for="password">Enter User Name</label><br /> -->
+            <input style="text-align:center;" type="text" id="email" placeholder="Enter User Name"ng-model="student.username" /> <br /><br/>
 
-            <label for="password">Enter Password</label><br />
-                <input style="text-align:center;" type="password" id="password" ng-model="student.password" /> <br/><br />
+            <!-- <label for="password">Enter Password</label><br /> -->
+                <input style="text-align:center;" type="password" id="password" placeholder="Enter Password" ng-model="student.password" /> <br/><br />
             
             <nav>
-                <a routerLink ="/navbar"></a> 
-                <input type="submit" id="submitButton" value="Submit" />
+                <!-- <a routerLink ="/navbar"></a>  -->
+                <input type="submit" routerLink ="/dashboard" id="submitButton" value="Submit" />
             </nav>
        <p> New to Booking?</p>
        <nav>
-           <a id="userSignupLink" routerLink ="/signup">Click here</a>
+           <a id="userSignupLink" routerLink ="/usersignup">Click here</a>
            <!-- <a routerlink="/navbar"></a> -->
        </nav>
            
