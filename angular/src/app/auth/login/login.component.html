@@ -2,28 +2,47 @@
 <head>
    BikeBooking
 </head>
-<body> 
-    <h1 class="login">LOG IN</h1>
-    <form>
-        <div class="tabs">
-            <button class="tablinks" onClick="openLogin(event,'User')">User</button>
-        </div>
-        <div style="text-align:center;">
-            <label for="password">Enter User Name</label><br />
-            <input style="text-align:center;" type="text" id="email" ng-model="student.username" /> <br /><br/>
+<body>
+ <div class="wrapper">
+    <div class="login" >
+    <div class="title"  style="text-align:center;" >
+    <h1>LOG IN</h1>
+    </div>
+    <form class="register">
+        <div class="register_switch" routerLink ="/login"  >
+            <!-- <button class="tablinks" style="text-align:center;" onClick="openLogin(event,'User')">User</button>
+        
+            <button class="tablinks" style="text-align:center;" onClick="openLogin(event,'Admin')">Admin</button> -->
 
-            <label for="password">Enter Password</label><br />
-                <input style="text-align:center;" type="password" id="password" ng-model="student.password" /> <br/><br />
+            <input type="radio" name="tab" value="U" id="userTab" routerLink="/login" class="register-switch-input" checked>
+            <label for="userTab" class="register-switch-label">User</label>
+            <input type="radio" name="tab" value="A" id="adminTab" routerLink="/login" class="register-switch-input">
+            <label for="adminTab" class="register-switch-label">Admin</label>
+        </div><br><br><br>
+        <div style="text-align:center;">
             
-           
-        <input type="submit" routerLink="/dashboard" id="submitButton" value="Submit" />
-       
+            <input style="text-align:center;" type="text" id="email" placeholder="Enter User Name"ng-model="student.username" /> <br /><br/>
+
+            
+                <input style="text-align:center;" type="password" id="password" placeholder="Enter Password" ng-model="student.password" /> <br/><br />
+            
+            <nav>
+                
+                <input type="submit" routerLink ="/dashboard" id="submitButton" value="Submit" />
+            </nav>
        <p> New to Booking?</p>
        <nav>
-        <a href="/adminSignup">clcik here to signup</a><br/>
-        </nav>
+           <a id="userSignupLink" routerLink ="/usersignup">Click here</a>
+          
+       </nav>
+           
+
        </div>
     </form>
-    
+    </div> 
+    </div> 
+
+
+   
 </body>
 </html>
