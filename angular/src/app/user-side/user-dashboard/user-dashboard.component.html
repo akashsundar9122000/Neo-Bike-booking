@@ -1,22 +1,31 @@
-<app-user-navbar></app-user-navbar>  
-<legend style="text-align:center;"><h1><b>DASHBOARD</b></h1></legend>
+ <app-user-navbar></app-user-navbar>  
+ <!-- <legend style="text-align:center;"><h1><b>DASHBOARD</b></h1></legend>  -->
 
-    <div class="container" id="userDashboard" style="width:100%; height:600px;">
-        <table class="table_dashboard" style="text-align:center;">
-          <thead>
+    <div class="limiter" id="userDashboard" style="width:100%; height:600px;">
+      <div class="container-table100">
+        <div class="wrap-table100">
+        <table class="table" style="text-align:center;">
+          <thead class="row header">
               <tr>
-                <th>COMPANY NAME</th><br><br>
-                <th>ADDRESS</th><br><br>
-                <th>MOBILE NUMBER</th>
+                <th class="cell">COMPANY NAME</th><br><br>
+                <th class="cell">ADDRESS</th><br><br>
+                <th class="cell">MOBILE NUMBER</th>
               </tr>
           </thead>
-          <tbody>
+          <tbody class="row">
             <tr *ngFor="let character of characters">
-              <td><a id="abc" routerLink="/companydetails">{{ character.name}}</a></td><br><br>
-              <td>{{ character.address }}</td><br><br>
-              <td>{{ character.mobile}}</td><br><br>
-              
-            </tr><br><br><br>
+              <td class="cell" data-title="COMPANY NAME"><a id="abc" routerLink="/companydetails">{{ character.name}}</a></td><br><br>
+              <td class="cell" data-title="ADDRESS">{{ character.address }}</td><br><br>
+              <td class="cell" data-title="MOBILE NUMBER">{{ character.mobile}}</td><br>
+            </tr>
           </tbody><br>
+          
         </table><br>
-      </div>  
+        </div></div>
+      </div>   
+
+
+
+
+
+      
