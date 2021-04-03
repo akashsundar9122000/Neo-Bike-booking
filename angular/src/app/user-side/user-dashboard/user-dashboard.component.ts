@@ -1,3 +1,4 @@
+//import { HttpClient } from '@angular/common/http';
 import { Component, Input, OnInit } from '@angular/core';
 import { CompanyList } from 'src/app/models/companylist';
 
@@ -34,7 +35,11 @@ export class UserDashboardComponent implements OnInit {
    
     }
   ];
-  constructor() { }
+  constructor() { 
+
+    
+
+  }
 
   //@Input()
   //company!: Company;

@@ -8,6 +8,10 @@ import { SignupComponent } from './auth/signup/signup.component';
 import { UserProfileEditComponent } from './user-side/user-profile-edit/user-profile-edit.component';
 import { UserProfileComponent } from './user-side/user-profile/user-profile.component';
 import { UserBookingsComponent } from './user-side/user-bookings/user-bookings.component';
+import { CompanyDetailsComponent } from './user-side/company-details/company-details.component';
+import { BikeDetailsComponent } from './user-side/bike-details/bike-details.component';
+
+
 
 const routes: Routes = [
   {path: 'dashboard', component: UserDashboardComponent },
@@ -16,7 +20,9 @@ const routes: Routes = [
   {path: 'usersignup', component:SignupComponent},
   {path: 'profileedit', component:UserProfileEditComponent},
   {path: 'userprofile', component:UserProfileComponent},
-  {path: 'userbookings', component:UserBookingsComponent}
+  {path: 'userbookings', component:UserBookingsComponent},
+  {path: 'companydetails', component:CompanyDetailsComponent},
+  {path: 'bikedetails', component:BikeDetailsComponent}
 
 
 ];

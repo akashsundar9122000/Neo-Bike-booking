@@ -1,6 +1,6 @@
 <app-user-navbar></app-user-navbar>  
 <legend style="text-align:center;"><h1><b>USER BOOKINGS</b></h1></legend>
-<div>
+<div style="width:100%; height:600px;">
         <table class="table-striped" style="text-align:center;">
           <thead>
               <tr>
@@ -13,7 +13,7 @@
           </thead>
           <tbody>
             <tr *ngFor="let booking of bookings">
-              <td>{{ booking.company_name}}</td><br><br>
+              <td><a id="abc" routerLink="/companydetails">{{ booking.company_name}}</a></td><br><br>
               <td>{{ booking.bike_model }}</td><br><br>
               <td>{{ booking.rent }}</td><br><br>
               <td>{{ booking.days }}</td><br>

@@ -1,9 +1,9 @@
-
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 import { LoginComponent } from './auth/login/login.component';
 import { UserDashboardComponent } from './user-side/user-dashboard/user-dashboard.component';
 import { UserNavbarComponent } from './user-side/user-navbar/user-navbar.component';
@@ -36,7 +36,7 @@ import { BikeDetailsComponent } from './user-side/bike-details/bike-details.comp
   imports: [
     BrowserModule,
     AppRoutingModule,
-    
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
