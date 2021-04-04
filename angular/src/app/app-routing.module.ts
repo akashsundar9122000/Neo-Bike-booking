@@ -10,8 +10,9 @@ import { UserProfileComponent } from './user-side/user-profile/user-profile.comp
 import { UserBookingsComponent } from './user-side/user-bookings/user-bookings.component';
 import { CompanyDetailsComponent } from './user-side/company-details/company-details.component';
 import { BikeDetailsComponent } from './user-side/bike-details/bike-details.component';
-
-
+import {SuperAdminDasboardComponent } from './super-admin-side/super-admin-dasboard/super-admin-dasboard.component'
+import { SuperAdminAllbookingsComponent } from './super-admin-side/super-admin-allbookings/super-admin-allbookings.component';
+import { SuperAdminLoginComponent } from './super-admin-side/super-admin-login/super-admin-login.component';
 
 const routes: Routes = [
   {path: 'dashboard', component: UserDashboardComponent },
@@ -22,7 +23,10 @@ const routes: Routes = [
   {path: 'userprofile', component:UserProfileComponent},
   {path: 'userbookings', component:UserBookingsComponent},
   {path: 'companydetails', component:CompanyDetailsComponent},
-  {path: 'bikedetails', component:BikeDetailsComponent}
+  {path: 'bikedetails', component:BikeDetailsComponent},
+  {path: 'superadmindashboard', component:SuperAdminDasboardComponent},
+  {path: 'allbookings', component:SuperAdminAllbookingsComponent},
+  {path: 'superadminlogin', component:SuperAdminLoginComponent}
 
 
 ];

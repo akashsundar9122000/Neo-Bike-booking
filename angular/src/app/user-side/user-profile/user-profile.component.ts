@@ -9,7 +9,7 @@ export class UserProfileComponent implements OnInit {
   
   user: UserProfileModel []=[
       {  
-        name: "John", 
+        name: "Preethi", 
         
         email: "email@email.com", 
         

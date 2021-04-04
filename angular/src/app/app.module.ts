@@ -15,6 +15,11 @@ import { UserProfileEditComponent } from './user-side/user-profile-edit/user-pro
 import { CompanyDetailsComponent } from './user-side/company-details/company-details.component';
 import { UserBookingsComponent } from './user-side/user-bookings/user-bookings.component';
 import { BikeDetailsComponent } from './user-side/bike-details/bike-details.component';
+import { SuperAdminSideComponent } from './super-admin-side/super-admin-side.component';
+import { SuperAdminLoginComponent } from './super-admin-side/super-admin-login/super-admin-login.component';
+import { SuperAdminNavbarComponent } from './super-admin-side/super-admin-navbar/super-admin-navbar.component';
+import { SuperAdminDasboardComponent } from './super-admin-side/super-admin-dasboard/super-admin-dasboard.component';
+import { SuperAdminAllbookingsComponent } from './super-admin-side/super-admin-allbookings/super-admin-allbookings.component';
 
 
 @NgModule({
@@ -31,6 +36,11 @@ import { BikeDetailsComponent } from './user-side/bike-details/bike-details.comp
     UserProfileEditComponent,
     UserBookingsComponent,
     BikeDetailsComponent,
+    SuperAdminSideComponent,
+    SuperAdminLoginComponent,
+    SuperAdminNavbarComponent,
+    SuperAdminDasboardComponent,
+    SuperAdminAllbookingsComponent,
     
   ],
   imports: [
