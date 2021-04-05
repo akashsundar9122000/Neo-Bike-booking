@@ -19,6 +19,16 @@ import { UserBookingsComponent } from './user-side/user-bookings/user-bookings.c
 
 import { AdminSignupComponent } from './auth/adminSignup/adminSignup.component';
 import { AddBikesComponent } from './admin-side/add-bikes/add-bikes.component';
+import { UserDashboardComponent } from './user-side/user-dashboard/user-dashboard.component';
+import { UserProfileComponent } from './user-side/user-profile/user-profile.component';
+import { UserProfileEditComponent } from './user-side/user-profile-edit/user-profile-edit.component';
+import { UserNavbarComponent } from './user-side/user-navbar/user-navbar.component';
+import { AdminLoginComponent } from './auth/admin-login/admin-login.component';
+import { SuperAdminSideComponent } from './super-admin-side/super-admin-side.component';
+import { SuperAdminLoginComponent } from './super-admin-side/super-admin-login/super-admin-login.component';
+import { SuperAdminNavbarComponent } from './super-admin-side/super-admin-navbar/super-admin-navbar.component';
+import { SuperAdminDasboardComponent } from './super-admin-side/super-admin-dasboard/super-admin-dasboard.component';
+import { SuperAdminAllbookingsComponent } from './super-admin-side/super-admin-allbookings/super-admin-allbookings.component';
 
 
 
@@ -30,21 +40,29 @@ import { AddBikesComponent } from './admin-side/add-bikes/add-bikes.component';
     AppComponent,
     UserSignupComponent,
     AdminSideComponent,
-    //AdminNavbarComponent,
+    AdminNavbarComponent,
     AdminDashboardComponent,
     AdminProfileComponent,
-<<<<<<< HEAD
-    ModlesComponent,
+
+  
     CompanyDetailsComponent,
     BikeDetailsComponent,
-    UserBookingsComponent
-=======
+    UserBookingsComponent,
+    UserDashboardComponent,
+    UserProfileComponent,
+    UserProfileEditComponent,
     LoginComponent,
-    ModlesComponent,
+    UserNavbarComponent,
     AdminSignupComponent,
     AddBikesComponent,
+    AdminLoginComponent,
+     SuperAdminSideComponent,
+    SuperAdminLoginComponent,
+    SuperAdminNavbarComponent,
+    SuperAdminDasboardComponent,
+    SuperAdminAllbookingsComponent,
     
->>>>>>> 3be3e0d25f15b0df7294516ea51544d27453b7f1
+    
   ],
   imports: [
     BrowserModule,
