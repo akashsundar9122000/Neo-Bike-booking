@@ -2,7 +2,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {HttpClientModule} from '@angular/common/http'
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserSignupComponent } from './auth/userSignup/userSignup.component';
@@ -11,12 +10,9 @@ import { AdminSideComponent } from './admin-side/admin-side.component';
 import { AdminDashboardComponent } from './admin-side/admin-dashboard/admin-dashboard.component';
 import { AdminProfileComponent } from './admin-side/admin-profile/admin-profile.component';
 import { LoginComponent } from './auth/login/login.component';
-import { ModelsComponent } from './models/models.component';
-
 import { CompanyDetailsComponent } from './user-side/company-details/company-details.component';
 import { BikeDetailsComponent } from './user-side/bike-details/bike-details.component';
 import { UserBookingsComponent } from './user-side/user-bookings/user-bookings.component';
-
 import { AdminSignupComponent } from './auth/adminSignup/adminSignup.component';
 import { AddBikesComponent } from './admin-side/add-bikes/add-bikes.component';
 import { UserDashboardComponent } from './user-side/user-dashboard/user-dashboard.component';
@@ -43,8 +39,6 @@ import { SuperAdminAllbookingsComponent } from './super-admin-side/super-admin-a
     AdminNavbarComponent,
     AdminDashboardComponent,
     AdminProfileComponent,
-
-  
     CompanyDetailsComponent,
     BikeDetailsComponent,
     UserBookingsComponent,
